@@ -70,6 +70,8 @@ Then, we verify that this distance is less than the difference between the value
 
 Every chosen node gets pushed to a queue, and this queue is always sorted from the closest to the farthest traversed node. At the next iteration, we draw the first element of the queue, and we increment the depth, so that we can match the dimension that node split when we were creating the tree. We calculate the distance between it and the target node, using the cosine similarity again, and if this node turns out to be closer, we override the last one. At every iteration, we ensure that the depth doesn't exceed the number of dimensions by cycling it using the modulo '%' operation. The search ends when we arrive at the bottom of the tree (Which is ironically its top).
 
+## Next Versions Features
 
-
-
+- Expanding the dimensionality to support more search criteria.
+- Opting for Euclidean similarity since the dimensionality is not high (So far).
+- Favouring categorical criteria over quantitative ones for better suggestions.
