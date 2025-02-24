@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Olky Movie Recommendation Tool</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<form id="search-form">
+  <label for="search">Search for a movie: </label>
+
+  <div id="search-box">
+    <input id="search" type="text" />
+    <button type="submit">Search</button>
+  </div>
+</form>
+
+<div id="results">
+  <p>Results: </p>
+</div>
+
+<div id="recommendation">
+  <table>
+    <thead>
+    <tr id="movie-title">
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr id="movie-year">
+      <td>Year</td>
+    </tr>
+    <tr id="movie-director">
+      <td>Directed by</td>
+    </tr>
+    <tr id="movie-actors">
+      <td>Starring</td>
+    </tr>
+    <tr id="movie-rating">
+      <td>Average user rating</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+<script type="module" src="src/main.ts"></script>
+</body>
+</html>
